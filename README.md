@@ -13,3 +13,12 @@
 <p>사이트 header - main - footer로 구성
 <P><strong>strong</strong>= 포인트 <em>em</em>= 강조
 <block qoute cite="https://webty.tistory.com/85">
+<hr>
+<h2>23.02.15 - HTMl - 문서태그</h2>
+<ul>
+<li>순서가 있는 목록</li>
+<li>순서가 없는 목록</li>
+<li>ul 또는 ol 과 li 사이에 다른 태그를 삽입하지 않도록 주의해야한다.</li>
+<li>순차/비순차 목록 1단 사용 시 추가 2단 / 3단을 제작하고 싶다면<br>
+새로운 목록(li)을 가지고 있는 (ul, ol) 부터 먼저 생성해야 한다.</li>
+<li>새로운 목록(li)이 만들어질때는 항상 ul 또는 ol 이 부모로 존재해야한다.</li>
