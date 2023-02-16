@@ -14,7 +14,7 @@
 <P><strong>strong</strong>= 포인트 <em>em</em>= 강조
 <block qoute cite="https://webty.tistory.com/85">
 <hr>
-<h2>23.02.15 - HTMl - 문서태그</h2>
+<h2>23.02.15 - HTMl - 문단태그</h2>
 <ul>
 <li>순서가 있는 목록</li>
 <li>순서가 없는 목록</li>
@@ -32,7 +32,9 @@
 <div class="study">
   <h2>23.02.16 - HTML - 시맨틱태그, 그룹태그</h2>
   <dl>
-    <dt>div</dt>
+    <dt>그룹div</dt>
+    <dd>2개 이상의 인라인 or 블록 요소를 묶어주는 그룹 태그</dd>
+    <dt></dt>
     <dd></dd>
   </dl>
 </div>  
