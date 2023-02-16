@@ -5,7 +5,7 @@
 <p>H1~H6은 검색키워드로 활용가능하다. H4~H6 꼭 필요한 경우만 이용하거나 권장안함</P>
 <p>block과 inline태그는 의미에 맞게 외부 내부 구조로 구성해서 사용해야 한다. (의미 중첩X)</p>
 <hr>
-<h2><p>23.02.14<p></h2>
+<h2>23.02.14</h2>
 <p>gnb(global navigation bar)<br>사이트 최상단 내비게이션 어떤 페이지에 들어가도 고정되어 있는 주 메뉴</p>
 <p>lnb(local navigation bar)<br>gnb의 하단에 배치된 서브 메뉴, 중분류 메뉴</p>
 <p>snb (side navigation bar)<br>페이지 내에 좌/우측에 일반적으로 존재하는 추가 메뉴</p>
