@@ -29,3 +29,10 @@
 <dd>dl안에 dt,dd 외에 다른 태그는 올 수 없다.(dd안에서만 사용가능)</dd>
 <dd>dt 연속으로 사용 불가, dt dd dt dd 반복해서는 올 수 있다.</dd>
 </dl>
+<div class="study">
+  <h2>23.02.16 - HTML - 시맨틱태그, 그룹태그</h2>
+  <dl>
+    <dt>div</dt>
+    <dd></dd>
+  </dl>
+</div>  
