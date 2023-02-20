@@ -92,17 +92,17 @@
         </thead>
         <tbody>
           <tr>
-            <th>1</th>
+            <th rowspan="3">block</th>
             <td>&lt;tr&gt;</td>
             <td>가로행태그</td>
           </tr>
           <tr>
-            <th>block</th>
+            <!-- <th>1</th> -->
             <td>&lt;td&gt;</td>
             <td>내용(열)태그</td>
           </tr>
           <tr>
-            <th>1</th>
+            <!-- <th>1</th> -->
             <td>&lt;th&gt;</td>
             <td>제목(열)태그</td>
           </tr>
