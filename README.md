@@ -79,3 +79,49 @@
   <li>controls //컨트롤 바 표시</li>
   <li>loop //반복</li>
   </ul>
+<hr>
+  <h2>23.02.20-Table</h2>
+  <body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">1</th>
+                <th colspan="4">선불요금제(국제전화)<br>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</th>
+                <!-- <th>3</th> -->
+                <!-- <th>4</th> -->
+                <!-- <th>5</th> -->
+            </tr>
+            <tr>
+                <!-- <th>1</th> -->
+                <th>기본요금<br>(부가세 포함 금액)</th>
+                <th>음성</th>
+                <th>문자</th>
+                <th>데이터</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>국제 선불 300M</th>
+                <td><em>40,700원</em></td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>300MB+3Mbps</td>
+            </tr>
+            <tr>
+                <th>국제 선불 11G	</th>
+                <td><em>55,000원</em></td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>11GB+3Mbps</td>
+            </tr>
+            <tr>
+                <th>국제 선불 11G스페셜</th>
+                <td><em>59,000원</em></td>
+                <td>집/이동전화 무제한(국제전화 매일 20분)</td>
+                <td>기본제공</td>
+                <td>11GB+일2GB+3Mbps</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
