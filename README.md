@@ -79,7 +79,7 @@
   <li>controls //컨트롤 바 표시</li>
   <li>loop //반복</li>
   </ul>
-<hr>
+  <hr>
   <h2>23.02.20-Table</h2>
   <body>
     <table>
