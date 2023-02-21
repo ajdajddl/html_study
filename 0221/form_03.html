@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-03</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>가입양식</legend>
+            <p><label for="agree"><input type="checkbox" id="agree">이용 약관에 동의합니다.</label></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">구분</th>
+                        <th scope="col">내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td><input type="text" name="id" placeholder="영문소문자/숫자 입력"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">비밀번호</th>
+                        <td><input type="password" name="id" placeholder="아이디와 다르게 입력"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주민등록번호</th>
+                        <td><input type="text" name="regi_fisrst" placeholder="주민등록번호 앞 6자리">-<input type="text" name="regi_last" placeholder="주민등록번호 뒤 7자리"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">성별</th>
+                        <td><label><input type="radio" name="gender" value="male">남<input type="radio" name="gender" value="female">여</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">관심 직종</th>
+                        <td><label><input type="checkbox" name="hobby" value="">웹기획자</label>
+                        <label><input type="checkbox" name="hobby" value="">편집디자이너 </label>
+                        <label><input type="checkbox" name="hobby" value="">웹디자이너</label>
+                        <label><input type="checkbox" name="hobby" value="">웹퍼블리셔</label>
+                        <label><input type="checkbox" name="hobby" value="">프론트앤드개발자</label>
+                        <label><input type="checkbox" name="hobby" value="">백앤드개발자</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대전화</th>
+                        <td>
+                            <select name="telecom">
+                                <option value="none">통신사</option>
+                                <option value="SKT">SKT</option>
+                                <option value="KT">KT</option>
+                                <option value="LG">LG</option>
+                            </select>010-<input type="number" maxlength="4" name="phone_num_first">-<input type="number" maxlength="4" name="phone_num_last">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+                        <td><input type="email" autofocus placeholder="이메일 입력" name="user_mail_id">
+                            @
+                            <select name="mail_address">
+                                <option value="none">이메일을 선택하세요</option>
+                                <option value="google">google.com</option>
+                                <option value="naver">naver.com</option>
+                                <option value="kakao">kakao.com</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">인사말</th>
+                        <td><textarea name="find_pw_answer" row="5" cols="50"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">회원가입</button>
+        </fieldset>
+    </form>
+</body>
+</html>
