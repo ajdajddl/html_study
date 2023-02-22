@@ -128,4 +128,6 @@
   <label><input type="radio" name="quiz" value="id">3. name</label>
   </fieldset>
   </form>
-      
+<hr>
+  <h2>23.02.22 - HTML </h2>
+  복습
