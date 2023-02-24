@@ -81,32 +81,32 @@
   </ul>
 <hr>
   <h2>23.02.20-Table</h2>
-<body>
-  <table>
-      <thead>
-        <tr>
-          <th>구분</th>
-          <th>태그명</th>
-          <th>의미</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="3">block</th>
-          <td>&lt;tr&gt;</td>
-          <td>가로행태그</td>
-        </tr>
-        <tr>
-          <!-- <th>1</th> -->
-          <td>&lt;td&gt;</td>
-          <td>내용(열)태그</td>
-        </tr>
-        <tr>
-          <!-- <th>1</th> -->
-          <td>&lt;th&gt;</td>
-          <td>제목(열)태그</td>
-        </tr>
-      </tbody>
+    <body>
+      <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>태그명</th>
+              <th>의미</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="3">block</th>
+              <td>&lt;tr&gt;</td>
+              <td>가로행태그</td>
+            </tr>
+            <tr>
+              <!-- <th>1</th> -->
+              <td>&lt;td&gt;</td>
+              <td>내용(열)태그</td>
+            </tr>
+            <tr>
+              <!-- <th>1</th> -->
+              <td>&lt;th&gt;</td>
+              <td>제목(열)태그</td>
+            </tr>
+          </tbody>
 <hr>   
   <h2>23.02.21-HTML-form</h2>
   <form action="#" method="get">
