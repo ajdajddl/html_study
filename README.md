@@ -135,3 +135,25 @@
     글꼴적용방법1. 사용자 컴퓨터에 내장된 글꼴 불러오기<br> 
     (위)주의사항: 해당글꼴이 접속한 사용자에게 없을 경우 글꼴이 임의의 다른 글꼴로 대체될 수 있다. 
     </p>
+<hr>
+  <h2>23.02.24</h2>
+  <p>
+  em은 사용자 디바이스에 맞춰서 변화<br>
+  font-size rem: body의 16px에 맞춰서 변경<br>
+  letter =음수 많이 사용<br>
+  word =양수 많이 사용<br>
+  line-height 행간<br>
+  letter-spacing 자간<br>
+  word-spacing 단어와 단어 사이 간격<br>
+  font-weight:600; 글자 굵기<br>
+  text-decoration:underline; 밑줄<br>
+  text-decoration:line-through; 취소선<br>
+  link rel="shortcut icon" href="파비콘.ico 경로" type="image/x-icon"<br>
+  link rel="icon" href="파비콘.ico 경로" type="image/x-icon"<br>
+  파비콘 넣기<br>
+  inline-block 크기 인식 하면서 옆으로<br> 
+  block 내려가며 크기 인식 <br>
+  inline 옆으로 크기 X<br>
+  box-sizing:border-box; 여백 값 고정(reset 위치에 넣기)<br>
+  border-radius:250px; or 50%  (가로, 세로 비율 일정할시 원모양)
+  </p>
