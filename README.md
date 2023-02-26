@@ -157,3 +157,25 @@
   box-sizing:border-box; 여백 값 고정(reset 위치에 넣기)<br>
   border-radius:250px; or 50%  (가로, 세로 비율 일정할시 원모양)
   </p>
+<hr>
+  <h2>23.02.26</h2>
+  <p>block 요소 특징<br>
+  ex) h1~6, p, div, blockquote, dl, dt, dd, ol, ul, li, header, footer, nav,<br>
+  main, section, article, video, iframe, table, tr, td, th, thead, tbody, tfoot, hr, form, filedset 등<br>
+  기본 너비 100%를 가지고 있다.<br>
+  크기, 여백 적용이 가능하다.<br>
+  너비100%와는 별도로 항상 줄바꿈이 이루어진다.<br>
+  inline 요소 특징<br>
+  ex) a, img, span, em, strong, i, del, s, q, code, button, input, select, option, legend, label, br 등<br>
+  인라인 태그 내 내용(텍스트 및 이미지)의 크기만큼만 인식한다.<br>
+  크기를 적용할 수 없습니다.<br>
+  여백(margin, padding)이 적용은 되나 크기 적용불가 특징으로 인해 주변 요소와 겹침현상이 발생한다.<br>
+  줄바꿈이 되지 않고 옆으로 나열된다.<br>
+  width 너비<br>
+  요소의 너비 값을 설정한다.<br>
+  상대값과 절대값에 따라 %, px로 구분한다.<br>
+  height 높이<br>
+  요소의 높이 값을 설정한다.<br>
+  상대값과 절대값에 따라 %, px로 구분한다.<br>
+  화면 높이(viewport) 기준으로 vh 단위를 사용 가능하다.
+  </p>
