@@ -161,7 +161,7 @@
   <h2>23.02.26</h2>
   <p>block 요소 특징<br>
   ex) h1~6, p, div, blockquote, dl, dt, dd, ol, ul, li, header, footer, nav,<br>
-  main, section, article, video, iframe, table, tr, td, th, thead, tbody, tfoot, hr, form, filedset 등<br>
+  main, section, article, video, iframe, table, tr, td, th, thead, tbody, tfoot, hr, form, fieldset 등<br>
   기본 너비 100%를 가지고 있다.<br>
   크기, 여백 적용이 가능하다.<br>
   너비100%와는 별도로 항상 줄바꿈이 이루어진다.<br>
