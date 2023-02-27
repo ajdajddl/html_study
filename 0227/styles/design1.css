@@ -1,0 +1,25 @@
+.path {
+    width:50vw; height:100vh;
+    background-color:aquamarine;
+}
+.path dl {
+    background-color:chartreuse;
+}
+.path dl dt {}
+.path dl dd {background-color:bisque;}
+.path dl dd i {}
+.path dl dd span {
+    background-color:cornflowerblue;
+    display:inline-block;
+    margin:5px 10px 30px 0;
+    /* margin-left:20px; */
+    /* margin:0 0 0 20px; */
+}
+.path dl dd a {
+    background-color:blueviolet;
+    /* width:120px; */
+    padding:10px 30px 10px 0;
+    display:inline-block;
+}
+.path dl dd .noto {font-family: 'Noto Sans KR', sans-serif;}
+.path dl dd .nanum {font-family: 'Nanum Gothic', sans-serif;}
