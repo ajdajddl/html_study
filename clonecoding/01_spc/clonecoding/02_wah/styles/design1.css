@@ -1,0 +1,29 @@
+main {
+    background-color:aqua; 
+    width:850px;
+    margin:0 auto;
+    border:1px solid lightgray;
+}
+main .top {
+    padding:20px 0;
+    height:100px;
+    background-color:lightgoldenrodyellow;
+    overflow:hidden;
+    border:1px solid lightgrey; border-top:none; border-left:none; border-right:none;
+}
+main .top h1 {font-size:20px;}
+main .top dl {
+    float:right;
+}
+main .top dl dd {}
+main .top dl dd span {}
+main .top dl dd em {}
+main section {background-color:lavender;}
+main section h2 {
+    text-align:left;
+    background-color:aqua;
+    padding:100px;
+}
+main section p {}
+main section:first-child p  {font-size:30px;}
+main section p em {}
