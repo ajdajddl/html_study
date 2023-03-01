@@ -1,0 +1,42 @@
+main {
+    border:1px solid lightgray;
+    background-color:yellow;
+    width:850px;
+    margin:0 auto;
+}
+main .top {
+    border:1px solid lightgray;
+    border-left:none; border-right:none; border-top:none;
+    background-color:white;
+    height:100px;
+}
+main .top h1 {
+    font-size:20px;
+    float:left;
+    line-height:100px;
+    padding-left:25px;
+}
+main .top dl {}
+main .top dl dd {
+    font-size:14px;
+    float:right;
+    line-height:100px;
+    padding-right:25px;
+}
+main .top dl dd span {}
+main .top dl dd em {}
+main section {background-color:white;}
+main section h2 {
+    color:darkblue;
+    font-size:17px;
+    padding:100px 25px 0;
+}
+main section p {
+    line-height:1.5;
+    padding:50px 25px 0;
+}
+main section h2+p, main section p em {
+    font-size:30px;
+}
+main section p em {color:green;}
+main section p:nth-child(5) {padding-bottom:100px;}
