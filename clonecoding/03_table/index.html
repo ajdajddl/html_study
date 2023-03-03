@@ -6,24 +6,24 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>table-02</title>
-    <style>
-        table, tr,td,th {border:2px solid rgb(247, 154, 191);}
-    </style>
+    <title>선불요금제</title>
+    <link href="./stsyles/reset.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <link href="./styles/main2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <table>
+    <table id="t">
         <thead>
-            <tr>
-                <th rowspan="2">image</th>
-                <th colspan="4">선불요금제(국제전화)<br>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</th>
+            <tr class="top">
+                <th rowspan="2"></th>
+                <th colspan="4">선불요금제(국제전화)<br><span>합리적인 선불요금제에 국제전화 혜택을 더한 알뜰한 요금제!</span></th>
                 <!-- <th>3</th> -->
                 <!-- <th>4</th> -->
                 <!-- <th>5</th> -->
             </tr>
             <tr>
                 <!-- <th>1</th> -->
-                <th scope="col">기본요금<br>(부가세 포함 금액)</th>
+                <th scope="col">기본요금<br><span>(부가세 포함 금액)</span></th>
                 <th scope="col">음성</th>
                 <th scope="col">문자</th>
                 <th scope="col">데이터</th>
@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <th scope="row">국제 선불 11G스페셜</th>
-                <td><em><span>59,000원</span></em></td>
+                <td><em><span>59,000</span>원</em></td>
                 <td>집/이동전화 무제한(국제전화 매일 20분)</td>
                 <td>기본제공</td>
                 <td>11GB+일2GB+3Mbps</td>
@@ -54,7 +54,8 @@
         </tbody>
     </table>
     <hr>
-    <table>
+    <!-- 2번째 -->
+    <table id="t2">
         <thead>
             <tr>
                 <th>업체</th>
@@ -70,41 +71,41 @@
         <tbody>
             <tr>
                 <th>Amobile</th>
-                <th><em>추천</em><br>요금폭탄방지 매일 2GB</th>
-                <td>11GB<br>(초과시 매일<br> 2GB+3MB 속도로<br> 무제한 이용)</td>
+                <th><span>추천</span><br><em>요금폭탄방지 매일 2GB</em></th>
+                <td>11GB<br><span>(초과시 매일<br> 2GB+3MB 속도로<br> 무제한 이용)</span></td>
                 <td>기본제공<br>(영상/부가 300분)</td>
                 <td>기본제공</td>
-                <td><em><span>월20,900원</span></em></td>
+                <td><em>월<span>20,900</span>원</em></td>
                 <td><a href="#">가입하기</a></td>
                 <td><a href="#">선택하기</a></td>
             </tr>
             <tr>
                 <th>Amobile</th>
-                <th><em>추천</em><br>A 데이터 무제한</th>
-                <td>15GB<br>(초과시 3Mbps 속도<br>로 무제한 이용)</td>
+                <th><span>추천</span><br><em>A 데이터 무제한</em></th>
+                <td>15GB<br><span>(초과시 3Mbps 속도<br>로 무제한 이용)</span></td>
                 <td>100분</td>
                 <td>100건</td>
-                <td><em><span>월16,500원</span></em></td>
+                <td><em>월<span>16,500</span>원</em></td>
                 <td><a href="#">가입하기</a></td>
                 <td><a href="#">선택하기</a></td>
             </tr>
             <tr>
                 <th>smarttel</th>
-                <th><em>추천</em><br>스마트 톡(Talk)</th>
-                <td>100MB<br>(초과시 400Mbps 속<br>도로 무제한 이용)</td>w
+                <th><span>추천</span><br><em>스마트 톡(Talk)</em></th>
+                <td>100MB<br><span>(초과시 400Mbps 속<br>도로 무제한 이용)</span></td>
                 <td>50분</td>
                 <td>-</td>
-                <td><em><span>월6,000원</span></em></td>
+                <td><em>월<span>6,000</span>원</em></td>
                 <td><a href="#">가입하기</a></td>
                 <td><a href="#">선택하기</a></td>
             </tr>
             <tr>
                 <th>yeoyou</th>
-                <th><em>추천</em><br>여유 100</th>
-                <td>100MB<br>데이터 차단기능/차<br>단시 100MB이용불<br>가</td>
+                <th><span>추천</span><br><em>여유 100</em></th>
+                <td>100MB<br><span>(데이터 차단기능/차<br>단시 100MB이용불<br>가)</span></td>
                 <td>100분</td>
                 <td>100건</td>
-                <td><em><span>월3,300원</span></em></td>
+                <td><em>월<span>3,300</span>원</em></td>
                 <td><a href="#">가입하기</a></td>
                 <td><a href="#">선택하기</a></td>
             </tr>
