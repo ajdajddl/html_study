@@ -191,5 +191,14 @@
       <h2>23.02.28</h2>
       <p>복습</p>
   <hr>
-      <h2>23.02.03</h2>
+      <h2>23.03.3</h2>
       <p></p>
+  <hr>
+      <h2>23.03.04</h2>
+      <ul>
+          <li>position:relative(필수) / left , right , top , bottom(보조)<br> 자기 자신의 현재 위치를 기준으로 이동<br>absolute의 기준으로 부모 위치를 잡을 때도 사용</li>
+          <li>position:absolute(필수) / left , right , top , bottom(보조)* 부모 위치를 기준으로 상대적으로 위치 이동<br>부모 기준은 가장 가까운 부모 기준 position 값을 인식</li>
+          <li>position:fixed(필수) / left , right , top , bottom(보조)<br>페이지 스크롤길이와 관계없이 웹브라우저 위치에 고정</li>
+          <li>shite-space:공백과 줄바꿈을 지정</li>
+          <li>overflow:hidden;범위 이탈 요소 처리(부유하는 속성 잡아줌) </li>
+      </ul>
