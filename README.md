@@ -197,8 +197,21 @@
       <h2>23.03.04</h2>
       <ul>
           <li>position:relative(필수) / left , right , top , bottom(보조)<br> 자기 자신의 현재 위치를 기준으로 이동<br>absolute의 기준으로 부모 위치를 잡을 때도 사용</li>
-          <li>position:absolute(필수) / left , right , top , bottom(보조)* 부모 위치를 기준으로 상대적으로 위치 이동<br>부모 기준은 가장 가까운 부모 기준 position 값을 인식</li>
+          <li>position:absolute(필수) / left , right , top , bottom(보조)부모 위치를 기준으로 상대적으로 위치 이동<br>부모 기준은 가장 가까운 부모 기준 position 인식</li>
           <li>position:fixed(필수) / left , right , top , bottom(보조)<br>페이지 스크롤길이와 관계없이 웹브라우저 위치에 고정</li>
           <li>shite-space:공백과 줄바꿈을 지정</li>
           <li>overflow:hidden;범위 이탈 요소 처리(부유하는 속성 잡아줌) </li>
       </ul>
+  <hr>
+       <h2>23.03.07</h2>
+        <p>position:00; left:50%; top:50%;<br>transform:translate(-50%, -50%); 기준점이 왼상단에 있는 위치를 가운데로 옮겨줌.</p>
+        <p>position:sticky; / z-index: position이 있어야 사용 가능한 옵션(겹쳐있을 경우 높은 숫자가 먼저 위로 오게)<br>-999부터 999까지 사용 가능 
+          <br>10, 100 단위 큰 숫자 사용</p>
+        <p>flex-direction:row  왼쪽->오른쪽 수평축 (기본값)</p><br>
+        <p>flex-direction:row-reverse  오른쪽->왼쪽</p><br> 
+        <p>flex-direction:column 위->아래 수직축 변경</p><br> 
+        <p>flex-direction:column-reverse 아래->위</p><br>
+        <p>flex-wrap:wrap:기본값(자동 줄바꿈) ex) 1 2 3</p><br>
+        <p>flex-wrap:wrap-reverse:행 기준 역방향으로 자동 줄바꿈 처리</p><br>
+        <p>:줄바꿈하지 않음(한 줄 처리) 가변너비에 따라 자동으로 % 크기 변경</p>
+       
