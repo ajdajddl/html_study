@@ -1,1 +1,162 @@
-header {background-color: aqua;}
+header {
+    background:rgba(0,0,0,0.7); position:fixed; 
+    z-index:900;
+    left:0; top:0;
+    height:80px; width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    padding:0 25px;
+    align-items:center;
+}
+header h1 {width:100px;}
+header h1 a {}
+header h1 a img {width: 100%;}
+header nav {}
+header nav a {color:#eee; margin-left:25px;}
+header nav a:hover {color:#fff;}
+header nav a:first-child {margin-left:0;}
+header .lnb {color:#fff;}
+header .lnb:hover {color:#ff0;}
+header .lnb::after {
+    content:'\f138'; display:inline-block; font-weight:600;
+    color:#17a2b8; margin-left:7px;
+}
+main {background: #f8f9fa;}
+main > * {margin:50px;}
+main .visual {
+    position:relative;
+    height:700px; 
+    overflow:hidden;
+}
+main div a h1 {
+    letter-spacing:-0.02em;
+    font-size:2rem;
+    font-weight: 600;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+main .visual video {width:100%}
+main .visual .ai {
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%, -50%);
+}
+main .visual .ai img {}
+
+main .board {
+    white-space:normal;
+    background-color: #f8f9fa;
+    width:1140px; margin:50px auto;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+}
+main .board a {
+    padding:20px;
+    width:32%;
+    background-color: #fff;
+}
+main .board a .category {
+    margin-bottom:20px;
+    text-transform:uppercase;
+    font-size:1.5rem;
+}
+main .board a h1 {
+    line-height:1.2;
+    letter-spacing:-0.02em;
+    font-size:2rem;
+    font-weight: 600;
+}
+main .board a:first-child h1 {padding-bottom: 40px;}
+main .board a p {
+    font-size:1.2rem; letter-spacing: 0.02em;
+}
+main .board a:nth-child(2) p:nth-child(3) {
+    margin-bottom:20px;
+}
+main .board a .contents {
+    line-height:1.5;
+}
+main .board a:first-child .contents {
+    /* 여러줄 말줄임 처리 */
+    white-space: wrap;
+    overflow:hidden; text-overflow: ellipsis;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    display:-webkit-box;
+}
+main .board a:first-child p:nth-child(3) {color:#999;}
+main .gallery {
+    padding-bottom: 50px;
+    width:1140px; margin:0 auto;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;  
+} 
+main .gallery a {
+    padding:0 20px 40px;
+    width:32%;
+    background-color: #fff;
+} 
+main .gallery a p {
+    font-size:1.2rem;
+} 
+main .gallery a .category {
+    margin-top:30px;
+    margin-bottom:30px;
+    text-transform:uppercase;
+    font-size:1.5rem;
+} 
+main .gallery a .img {} 
+main .gallery a .img img {
+    padding-bottom: 25px;
+    width:100%;
+} 
+main .gallery a h1 {
+    padding-bottom:10px;
+    letter-spacing:-0.02em;
+    font-size:2rem;
+    font-weight: 600;
+} 
+main .gallery a .contents {line-height:1.5;} 
+/* footer */
+footer {
+    padding-top: 20px;
+    border-top:1px solid rgb(154, 154, 154);
+    width:100%; 
+} 
+footer .f_container {
+    width:1140px; margin:0 auto;
+}
+footer .f_container .f_t_top {
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+}
+footer .f_container .f_t_top .f_t_left {padding-bottom: 20px;}
+footer .f_container .f_t_top .f_t_left a {
+    margin-right:16px;
+}
+footer .f_container .f_t_top .f_t_left a:hover {text-decoration: underline;}
+footer .f_container .f_t_top .f_t_left a:last-child {margin: 0;}
+footer .f_container .f_t_top .f_t_left a:last-child:after {display: none;}
+footer .f_container .f_t_top .f_t_left a::after {
+    background-color: #999;
+    content:''; display:inline-block;
+    position:relative; right:-10px; top:-2px;
+    width:1px; height:9px;
+}
+footer .f_container .f_t_top .site {
+    background: #333;
+    color:#fff;
+    border-radius: 5px;
+    text-align:center;
+    padding:10px;
+    width:100px;
+}
+footer .f_container .f_t_top .site:hover {background-color:#000;}
+footer .f_container .f_btm {
+    padding-bottom: 20px;
+    color:#999
+}
+footer .f_container .f_btm address {line-height: 1.5;}
+footer .f_container .f_btm p {line-height: 1.5;}
