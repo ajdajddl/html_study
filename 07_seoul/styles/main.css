@@ -73,50 +73,280 @@ header #h_btm .right .r_btm p:first-child {
 }
 /* main */
 main {
-    background-color: aqua;
-    width: 1152px;
-    margin:0 auto;
+
 }
 main .bnr_wrap {
-    background-color: yellow;
-    display:flex;
+    width: 1152px; 
+    margin: 0 auto;
+    display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;}
-main .bnr_wrap .left {position:relative;}
-main .bnr_wrap .left .bnr {}
-main .bnr_wrap .left .bnr {}
-main .bnr_wrap .left .bnr img {}
-main .bnr_wrap .left .close {
-    color:#fff;
-    display:inline-block;
-    background:#1e6cb3; padding:10px;
-    border-radius: 3px;
-    position:absolute; right: 30px; bottom:30px;
+    justify-content: space-between;
 }
+main .bnr_wrap .left {
+    position: relative;
+}
+main .bnr_wrap .left .bnr {}
+main .bnr_wrap .left .bnr img {
+}
+main .bnr_wrap .left .close {
+    position: absolute; bottom:10px; right:10px;
+    border: 1px solid #1e6cb3;
+    background-color: #1e6cb3;
+    border-radius: 5px;
+    width: 60px; height: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    display: inline-block;
+}
+main .bnr_wrap .left .close:hover {background-color: #577fa4;}
 main .bnr_wrap .right {
-    width:100px;
-    display:flex;
-    flex-flow:column wrap;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 main .bnr_wrap .right .corona {
-    margin-bottom: 7px;
-    position:relative; display:inline-block;
+    position: relative;
+    display: block;
 }
 main .bnr_wrap .right .corona img {}
 main .bnr_wrap .right .corona span {
-    display:inline-block; height:20px;
-    background: red;
-    position:absolute;
+    position: absolute;
+    display: inline-block;
 }
+/* 원래는 span에 position absolute 주면 다 밑에꺼 적용돼서 편함~ */
 main .bnr_wrap .right .corona .date {
-    text-align:center;
-    width: 160px; right:20px; top:11px;}
-main .bnr_wrap .right .corona .result {text-align:center;}
-main .bnr_wrap .right .corona .result1 {width: 140px; top:80px; left:30px;}
-main .bnr_wrap .right .corona .result2 {width: 140px; top:80px; left:30px;}
-main .bnr_wrap .right .corona .result3 {width: 94px; top:155px; left:30px;}
-main .bnr_wrap .right .corona .result4 {width: 94px; top:155px; left:145px;}
-main .bnr_wrap .right .corona .result5 {width: 94px; top:155px; left:30px;}
+    width: 154px; height: 24px;
+    top:13px; right:6px}
+main .bnr_wrap .right .corona .result {
+    color: #fff;
+    text-align: center;
+}
+main .bnr_wrap .right .corona .result1 {
+    width: 141px; height: 26px;
+    top:80px; left:30px;
+}
+main .bnr_wrap .right .corona .result2 {
+    width: 141px; height: 26px;
+    top:80px; right:29px;
+}
+main .bnr_wrap .right .corona .result3 {
+    width: 94px; height: 26px;
+    bottom: 49px; left:30px;
+}
+main .bnr_wrap .right .corona .result4 {
+    width: 94px; height: 26px;
+    bottom: 49px; right:119px;
+}
+main .bnr_wrap .right .corona .result5 {
+    width: 60px; height: 26px;
+    bottom: 49px; right:31px;
+}
 main .bnr_wrap .right .bnr {}
 main .bnr_wrap .right .bnr img {}
+
 /* 주요서비스 */
+main .service_wrap {
+    width: 1152px; 
+    margin: 0 auto;
+}
+main .service_wrap .title {
+    border-bottom: 1px solid rgb(190, 189, 189);
+    padding:40px 20px 20px 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .service_wrap .title h1 {
+    letter-spacing: -3px;
+    font-size:1.6rem;
+    font-weight:500;
+}
+main .service_wrap .title .site {
+    padding:5px;
+    border:1px solid rgb(190, 189, 189);
+}
+main .service_wrap .contents {
+    padding-top: 20px;
+    display:flex;
+    flex-flow:row nowrap;
+}
+main .service_wrap .contents a {
+    /* height=X */
+    width:9.09%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .service_wrap .contents a span {}
+main .service_wrap .contents a span:first-child {
+    background:url(../images/icon_service/css_sprites\ \(1\).png) no-repeat;
+    width:60px; height:60px;
+    text-indent:-9999;
+}
+main .service_wrap .contents a span:last-child {text-align:center; font-size:0.8rem;}
+main .service_wrap .contents a:nth-child(1) span:first-child {background-position: -0;}
+main .service_wrap .contents a:nth-child(2) span:first-child {background-position-x: -60px;}
+main .service_wrap .contents a:nth-child(3) span:first-child {background-position-x: -120px;}
+main .service_wrap .contents a:nth-child(4) span:first-child {background-position-x: -180px;}
+main .service_wrap .contents a:nth-child(5) span:first-child {background-position-x: -240px;}
+main .service_wrap .contents a:nth-child(6) span:first-child {background-position-x: -300px;}
+main .service_wrap .contents a:nth-child(7) span:first-child {background-position-x: -360px;}
+main .service_wrap .contents a:nth-child(8) span:first-child {background-position-x: -420px;}
+main .service_wrap .contents a:nth-child(9) span:first-child {background-position-x: -480px;}
+main .service_wrap .contents a:nth-child(10) span:first-child {background-position-x: -540px;}
+main .service_wrap .contents a:nth-child(11) span:first-child {background-position-x: -600px;}
+/* main 코로나 검사, 신고 */
+main .bnr_wrap_bg {}
+main .bnr_wrap_bg .corona_img {
+    width:100%;
+    background-color: #eff4f8;
+    padding:40px;
+    display:flex;
+    flex-flow:row nowrap;
+    margin:40px auto;
+    justify-content: center;
+}
+main .bnr_wrap_bg .corona_img a {display:inline-block;}
+main .bnr_wrap_bg .corona_img a img {}
+/* board */
+main .board_wrap .title a::after {
+    content:'\2b'; font-weight:600;
+}
+main .board_wrap {
+    width:1152px; margin:30px auto 0; 
+    display:flex; flex-flow:row nowrap; justify-content: space-between;
+}
+main .board_wrap > * {width:32%;}
+main .board_wrap .event {}
+main .board_wrap .festival {}
+main .board_wrap .service {}
+main .board_wrap > div .title {
+    padding:15px 0; margin:0 0 15px; border-bottom:1px solid rgb(190, 189, 189);
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .board_wrap > div .title h1 {}
+main .board_wrap > div .title .more {}
+main .board_wrap > div .contents {display:flex; flex-flow:column nowrap;}
+main .board_wrap > div .contents a {padding:7px 0;}
+main .board_wrap > div .contents a span {}
+main .board_wrap > div .contents a .administartion {color:#028ab6;}
+main .board_wrap > div .contents a .environment {color:#599100;}
+main .board_wrap > div .contents a .welfare {color:#d76000;}
+main .board_wrap > div .contents a .housing {color:#c35c3c;}
+main .board_wrap > div .contents a .culture {color:#9b64d3;}
+main .board_wrap > div .contents a .economy {color:#069363;}
+main .board_wrap > div .contents a span:first-child {margin-right:10px;}
+main .board_wrap > div .contents a span:last-child {
+    width:85%;  display:inline-block;
+    white-space:nowrap; text-overflow:ellipsis; overflow:hidden;
+}
+main .board_wrap > .service .title {border:0;}
+main .board_wrap > .service .contents {
+    background:#eff4f8; display:flex; flex-flow:row wrap;}
+main .board_wrap > .service .contents a {width:50%;}
+main .board_wrap .more {
+    padding:5px 10px;
+    border:1px solid #eff4f8;
+    margin-right: 20px;
+}
+main .board_wrap h1 {font-size:1.5rem; font-weight:500;}
+/* 분야별정보 */
+main .inform_wrap {
+    width:1152px; 
+    margin:0 auto;
+}
+main .inform_wrap title {
+    border-bottom: 1px solid rgb(190, 189, 189);
+    padding:40px 20px 20px 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .inform_wrap title h1 {
+    letter-spacing: -3px;
+    font-size:1.6rem;
+    font-weight:500;
+}
+main .inform_wrap title a {}
+main .inform_wrap title .site {}
+main .inform_wrap .contents {
+    padding-top: 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+main .inform_wrap .contents a {
+    width:9.09%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+main .inform_wrap .contents a span {}
+main .inform_wrap .contents a span:first-child {
+    background: url(../images/icon_set/css_sprites.png) no-repeat;
+    width:100px; height:111px;
+    text-indent: -9999px;
+}
+main .inform_wrap .contents a span:last-child {}
+main .inform_wrap .contents a:nth-child(1) span:first-child {background-position-x: 0;}
+main .inform_wrap .contents a:nth-child(2) span:first-child {background-position-x: -110px;}
+main .inform_wrap .contents a:nth-child(3) span:first-child {background-position-x: -220px;}
+main .inform_wrap .contents a:nth-child(4) span:first-child {background-position-x: -320px;}
+main .inform_wrap .contents a:nth-child(5) span:first-child {background-position-x: -420px;}
+main .inform_wrap .contents a:nth-child(6) span:first-child {background-position-x: -520px;}
+main .inform_wrap .contents a:nth-child(7) span:first-child {background-position-x: -620px;}
+main .inform_wrap .contents a:nth-child(8) span:first-child {background-position-x: -740px;}
+/* 새소식 */
+main .gallery {
+    width:1152px;
+    margin:0 auto;
+}
+main .gallery .title {
+    border-bottom:1px solid rgb(190, 189, 189);
+    padding: 40px 0 20px 0;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items: center;
+}
+main .gallery .title h1 {
+    font-size:1.5rem;
+    font-weight:500;
+}
+main .gallery .title a {}
+main .gallery .title .more {
+    padding:5px;
+    border:1px solid rgb(190, 189, 189);
+}
+main .gallery .n_inform {
+    padding-top:20px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-content:flex-start;
+}
+main .gallery .n_inform a {
+    padding-bottom:40px;
+    width:280px;
+    margin:0 auto;
+}
+main .gallery .n_inform a p {
+    /* position: relative; */
+}
+main .gallery .n_inform a p img {width:100%;
+    transition: all 0.5s;}
+main .gallery .n_inform a p img:hover {
+    /* width: 100%;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%,-50%); */
+    /* transform 속성은 요소의 중심으로 인식한다. */
+    transform: scale(1.1);
+    /* css 수치값의 변화가 일어날때 애니메이션 적용 */
+    /* ex) 110->100 값변화 0 */
+    /* ex) row->column 값변화 X */
+}
+main .gallery .n_inform a .img {height:200px;
+    overflow:hidden;}
+main .gallery .n_inform a .contents {}
+/* width 속성의 경우-> 왼쪽상단 기준점으로 인해 우측하단으로만 이미지가 확대된다. */
