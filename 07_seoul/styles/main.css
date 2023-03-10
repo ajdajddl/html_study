@@ -1,3 +1,9 @@
+/* 탑버튼 */
+#top {
+    position:fixed; right:50px; bottom:50px;
+    z-index:9999; /*단위 없음*/
+    /* 내가 가고자 하는곳의 id 주기 */
+}
 header {
     text-align: center;
     width: 1152px;
@@ -350,3 +356,84 @@ main .gallery .n_inform a .img {height:200px;
     overflow:hidden;}
 main .gallery .n_inform a .contents {}
 /* width 속성의 경우-> 왼쪽상단 기준점으로 인해 우측하단으로만 이미지가 확대된다. */
+/* footer */
+footer {
+    width:1152px;
+    margin:0 auto;
+}
+footer .top {
+    padding:25px 0;
+    border:1px solid rgb(190, 189, 189);
+    border-left:none;
+    border-right:none;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .top .menu {}
+footer .top .menu a {
+    color:rgb(158, 158, 158);
+    font-size:0.9rem;
+}
+footer .top .menu a:nth-child(2) {color:#000;}
+footer .top .menu a:last-child::after {display: none;}
+footer .top .menu a:after {
+    margin-left:5px;
+    background-color: rgb(158, 158, 158);
+    width:1px; height:10px;
+    content:''; display:inline-block; 
+}
+footer .top .right {}
+footer .top .right a {
+    background:url(../images/icon_sns2/css_sprites.png) no-repeat;
+    text-indent: -9999px;
+    width:25px; height:25px;
+    display: inline-block;
+}
+footer .top .right a:hover {
+    background:url(../images/icon_sns/css_sprites.png) no-repeat;
+    text-indent: -9999px;
+    width:25px; height:25px;
+    display: inline-block;
+}
+footer .top .right a span {}
+footer .top .right a:nth-child(1) {background-position: 0;}
+footer .top .right a:nth-child(2) {background-position: -25px;}
+footer .top .right a:nth-child(3) {background-position: -50px;}
+footer .top .right a:nth-child(4) {background-position: -75px;}
+footer .top .right a:nth-child(5) {background-position: -100px;}
+footer .top .right a:nth-child(6) {background-position: -125px;}
+/* hover */
+footer .top .right a:hover {
+    background:url(../images/icon_sns/css_sprites.png) no-repeat;
+    text-indent: -9999px;
+    width:25px; height:25px;
+    display: inline-block;
+}
+footer .top .right a:nth-child(1):hover {background-position: 0;}
+footer .top .right a:nth-child(2):hover {background-position: -25px;}
+footer .top .right a:nth-child(3):hover {background-position: -50px;}
+footer .top .right a:nth-child(4):hover {background-position: -75px;}
+footer .top .right a:nth-child(5):hover {background-position: -100px;}
+footer .top .right a:nth-child(6):hover {background-position: -125px;}
+footer .btm {
+    padding:20px 0 100px 0;
+    display:flex;
+    flex-flow:row-nowrap;
+    justify-content: space-between;
+}
+footer .btm .copyright {
+    display: flex;
+    flex-flow: row nowrap;
+}
+footer .btm .copyright p {}
+footer .btm .copyright p img {}
+footer .btm .copyright .call120 {}
+footer .btm .copyright .copy {
+    font-size:0.9rem;
+    line-height:1.6;
+    margin-left:15px;
+}
+footer .btm .mark {}
+footer .btm .mark a {}
