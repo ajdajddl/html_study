@@ -217,3 +217,12 @@
   <hr>
       <h2>23.03.08</h2>
       css 스프라이트 연습
+  <hr>
+      <h2>23.03.13</h2>
+      git 연습
+      코드 복사 후 검색 아래 소스제어 선택 - 기타작업(...) - 원격 - 원격추가 - 복사 한 링크 붙여넣기 후
+      1. git init  
+      2. git branch -M main
+      3. git pull origin main
+      
+      
