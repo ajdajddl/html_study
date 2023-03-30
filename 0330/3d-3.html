@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body, html {
+            text-align: center;
+            background: #eee;
+        }
+        .perspective {
+            transform-style: preserve-3d;
+            perspective: 700px;
+            display: inline-flex;
+            margin-top:200px;
+        }
+        .perspective .box {
+            margin:50px;
+            width: 200px; height: 200px;
+            border: 5px solid #fff;
+            background: hotpink;
+            transform: rotateX(40deg) rotateZ(45deg);
+            box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+        }
+        /* .perspective .box:hover {
+            animation: box 0.3s ease both;
+        } */
+        .perspective .box:nth-child(1) {
+            animation: box 0.5s ease forwards, box 0.5s alternate-reverse ease forwards 2.5s;
+        }
+        .perspective .box:nth-child(2) {
+            animation: box 0.5s ease forwards 1s, box 1s alternate-reverse ease forwards 3s; 
+        }
+        @keyframes box {
+            0% {
+                transform:rotateX(40deg) rotateZ(45deg) scale(1);
+                border-radius:0;
+                box-shadow:0 5px 5px rgba(0,0,0,0.5);
+            }
+            100% {
+                transform:rotateX(0) rotateZ(0) scale(1.2);
+                border-radius:20px;
+                box-shadow:0 100px 30px -30px rgba(0,0,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

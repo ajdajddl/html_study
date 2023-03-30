@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body {text-align: center; overflow:hidden;}
+        #go {
+            position:fixed; left:25px; top:25px; border-radius: 10px;
+            padding: 20px; background: #222; color:#fff;
+        }
+        #perspective {
+            /*background: #eee;*/ display: inline-flex;
+            padding:30px; margin-top:200px;
+            transform-style: preserve-3d; 
+            perspective:200px; 
+            /*부모내의 자식을 3차원 대상 인식 */
+            /* 사람과 화면상의 거리 */
+        }
+        #perspective .box {
+            background: linear-gradient(pink,yellow,aqua,lightgreen); width: 200px; height: 200px;
+            transition:all 0.5s; margin:100px;
+        }
+        #go:hover ~ #perspective .box {
+            animation: ts3d 1s linear alternate infinite;
+            /* transform: rotateX(60deg) skew(50deg); */
+            /* 자식한테 넣어줄 경우 'transform: perspective()' 식으로 넣어줌 */
+        }
+        @keyframes ts3d {
+            0% {
+                transform:rotate(0) scale(0.5) skew(0) translateY(0);
+            }
+            100% {
+                transform:rotate(360deg) scale(2) skew(105deg) translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="go">Go</button>
+    <div id="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

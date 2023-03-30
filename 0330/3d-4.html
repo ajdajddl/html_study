@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        /* #f68a16 배경*/
+    body, html {
+        text-align: center;
+        background: #f68a16;
+    }
+    .perspective {
+        transform-style:preserve-3d;
+        display: inline-flex;
+        perspective: 100px;
+    }
+    .perspective .box {
+        position: relative;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+        margin:200px 30px;
+        border:5px solid #fff;
+        width:250px; height:250px; 
+        overflow: hidden;
+    }
+    .perspective .box:nth-child(1) {
+        animation: y 0.5s linear forwards, x 2s ease 0.5s alternate forwards;
+    } 
+    .perspective .box:nth-child(2) {
+        animation: y 0.5s linear forwards, x2 2s ease 0.5s alternate forwards;
+    }
+    .perspective .box img {
+        position: absolute; top:-190px; left:-70px;
+        width:160%;
+    }
+    @keyframes y {
+        0% {transform: translateY(-400px) scale(1);}
+        100% {transform: translateY(0) scale(1.1);}
+    }
+    @keyframes x {
+        0% {transform: translateY(0) translateX(0) scale(1.1);}
+        50% {transform: translateY(0) translateX(-1000px) scale(1.1);}
+    }
+    @keyframes x2 {
+        0% {transform: translateY(0) translateX(0) scale(1.1);}
+        50% {transform: translateY(0) translateX(1000px) scale(1.1);}
+    }
+    </style>
+</head>
+<body>
+    <div class="perspective">
+        <div class="box"><img src="./images/burger1.jpg" alt=""></div>
+        <div class="box"><img src="./images/burger1.jpg" alt=""></div>
+    </div>
+</body>
+</html>
