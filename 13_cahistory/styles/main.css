@@ -1,0 +1,116 @@
+main {
+  background: url(../images/hero-bg-md-01.gif) center;
+  height: 100vh;
+  background-size: cover;
+}
+main #visual {
+  width: 1224px;
+  margin: 0 auto;
+}
+main #visual h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.07em;
+}
+main #visual h1 em {
+  font-size: 3.75rem;
+  color: #189bfa;
+}
+main #visual .category {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+main #visual .category a {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+}
+main #visual .category a::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main #visual .category a:first-child::before {
+  display: none;
+}
+main #visual .category a:first-child {
+  background: #ff5252;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+}
+main #visual .category a:last-child {
+  border-radius: 0 20px 20px 0;
+}
+main #visual .view_box {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: 85%;
+  padding: 30px;
+}
+main #visual .view_box #viewFrm fieldset {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px;
+}
+main #visual .view_box #viewFrm fieldset input {
+  margin: 0 5px;
+  padding: 0 20px;
+}
+main #visual .view_box #viewFrm fieldset #view_btn {
+  background: #189bfa;
+  color: #fff;
+}
+main #visual .view_box .list {
+  padding: 20px 0 0;
+}
+main #visual .view_box .list a {
+  color: #fff;
+  margin-right: 20px;
+  float: left;
+}
+main #visual .view_box .list a i {
+  color: #189bfa;
+}
+main #visual .view_box .list a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  color: #189bfa;
+  background: #aaa;
+  right: 1;
+  bottom: 0;
+  margin-left: 15px;
+}
+main #visual .view_box .list a:first-child::before {
+  display: none;
+}
+main #visual .view_box .list .sample_view {
+  float: right;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+main #visual .view_box .list a:last-child::before {
+  content: "\f15c";
+  display: inline-block;
+  color: #189bfa;
+  width: 20px;
+  height: 20px;
+  background-size: 12px;
+}
+main #visual .view_box .list a:last-child::after {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
