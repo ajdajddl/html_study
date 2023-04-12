@@ -1,0 +1,232 @@
+main #visual {
+  background: url(../images/hero-bg-md-01.gif) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  margin: 150px auto;
+  height: 100vh;
+}
+main #visual h1 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 3.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.07em;
+}
+main #visual h1 em {
+  font-size: 3.75rem;
+  color: #189bfa;
+}
+main #visual .category {
+  padding: 100px 0 10px;
+  display: flex;
+  justify-content: center;
+}
+main #visual .category a {
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 25px;
+}
+main #visual .category a::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: #aaa;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+main #visual .category a:first-child::before {
+  display: none;
+}
+main #visual .category a:first-child {
+  background: #ff5252;
+  color: #fff;
+  border-radius: 20px 0 0 20px;
+}
+main #visual .category a:last-child {
+  border-radius: 0 20px 20px 0;
+}
+main #visual .view_box {
+  margin: 20px auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: 1000px;
+  padding: 30px;
+}
+main #visual .view_box #viewFrm fieldset {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px;
+}
+main #visual .view_box #viewFrm fieldset input {
+  margin: 0 5px;
+  padding: 0 20px;
+}
+main #visual .view_box #viewFrm fieldset #view_btn {
+  background: #189bfa;
+  color: #fff;
+}
+main #visual .view_box .list {
+  padding: 20px 0 50px;
+}
+main #visual .view_box .list a {
+  color: #fff;
+  margin-right: 20px;
+  float: left;
+}
+main #visual .view_box .list a i {
+  color: #189bfa;
+}
+main #visual .view_box .list a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  color: #189bfa;
+  background: #aaa;
+  right: 1;
+  bottom: 0;
+  margin-left: 15px;
+}
+main #visual .view_box .list a:first-child::before {
+  display: none;
+}
+main #visual .view_box .list .sample_view {
+  float: right;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+main #visual .view_box .list a:last-child::before {
+  content: "\f15c";
+  display: inline-block;
+  color: #189bfa;
+  width: 20px;
+  height: 20px;
+  background-size: 12px;
+}
+main #visual .view_box .list a:last-child::after {
+  display: none;
+}
+main .container {
+  background: aqua;
+  width: 1224px;
+  margin: 0 auto;
+  padding: 100px 0;
+  text-align: center;
+}
+main .container .sub_title {
+  padding-bottom: 10px;
+  color: #000;
+}
+main .container .sub_title::after {
+  margin: 10px auto;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #aaa;
+}
+main .container h1 {
+  font-size: 1.8rem;
+}
+main .container .contents {
+  padding-top: 30px;
+  color: #aaa;
+}
+main #video .tab {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+main #video .tab a:first-child {
+  border-bottom: 5px solid #189bfa;
+}
+main #video .tab a {
+  width: 130px;
+  padding: 25px 0;
+}
+main #video .tab_contents .tab1 {
+  position: relative;
+}
+main #video .tab_contents .tab1 video {
+  width: 80%;
+}
+main #video .tab_contents .tab1 .img {
+  position: absolute;
+  bottom: -15%;
+  right: 30px;
+}
+main #video .tab_contents .tab2 p {
+  background: lime;
+  padding: 200px 0;
+}
+main #menu .tab {
+  border-bottom: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  margin: 70px 0;
+}
+main #menu .tab a {
+  margin: 0 10px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  background: #fff;
+  line-height: 50px;
+  position: relative;
+  bottom: -1px;
+}
+main #menu .tab a:first-child {
+  margin: 0 10px;
+  border-bottom: 0;
+}
+main #menu .tab a:first-child::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: #189bfa;
+  width: 100%;
+  height: 5px;
+}
+main #menu .tab_contents .tab1 {
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "t1 t2" "t3 t4" "t5 .";
+}
+main #menu .tab_contents .tab1 h2 {
+  grid: "t1";
+  font-size: 2rem;
+  color: #189bfa;
+  padding: 20px 20px;
+}
+main #menu .tab_contents .tab1 h2 + h2 {
+  grid: "t2";
+  font-size: 1.3rem;
+  color: #000;
+}
+main #menu .tab_contents .tab1 .big {
+  grid: "t3";
+}
+main #menu .tab_contents .tab1 ul {
+  grid: "t4";
+}
+main #menu .tab_contents .tab1 ul li {
+  margin: 20px 20px;
+}
+main #menu .tab_contents .tab1 ul li:nth-child(1)::before {
+  width: 70px;
+  height: 50px;
+  content: "";
+  display: inline-block;
+  background: url(../images/menu-1-1.png) no-repeat center;
+}
+main #menu .tab_contents .tab1 .intro {
+  grid: "t5";
+}
+main #menu .tab_contents .tab2, main #menu .tab_contents .tab3, main #menu .tab_contents .tab4 {
+  background: pink;
+  padding: 250px 0;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+//색상변수
+$point1:#189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt2:#000;
+
+//common.css = Header, footer Design
+//main.css = Main Design
+//responsive.css = 반응형 Design
+#h_bg {
+    background:$bg2; position:fixed; left:0; top:0;
+    z-index:999; box-shadow: 0 1px 10px rgba(0,0,0,0.2); width:100%;
+    header {
+        height:104px; width:1224px; margin:0 auto;
+        display:flex; flex-flow:row nowrap; justify-content: space-between; align-items: center;
+        h1 {a{img{}}}
+        .right {
+            nav {
+                a {margin-left:10px;}
+                // a:hover {color:$point1;}
+                a:last-child:hover {color:$bg2; background: $point2;}
+                a:nth-child(1) {}
+                a:nth-child(2) {
+                    background:url(../images/banner_gray2.png)no-repeat;
+                    background-size: 25px; padding-left: 30px;
+                }
+                a:nth-child(3) {}
+                a:nth-child(3)::before {
+                    background: url(../images/language.png)no-repeat center;
+                    background-size: 20px;
+                    width:20px; height:20px; margin-right:5px;
+                    position:relative; top:4px;
+                    content: ''; display: inline-block;
+                }
+                a:nth-child(3)::after {
+                    padding-left: 10px;
+                    content: '\f002'; display: inline-block; width:20px; font-weight: 600;
+                }
+                a:nth-child(4) {display: none;}
+                .all_nav {
+                    background: $point1 url(../images/allMenu.png) no-repeat 5px center; 
+                    background-size: 20px;
+                    color: $bg2; padding: 10px 5px 10px 30px;
+                }
+            }
+        }
+    }
+}

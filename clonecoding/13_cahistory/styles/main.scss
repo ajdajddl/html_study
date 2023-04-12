@@ -1,0 +1,178 @@
+$point1:#189bfa;
+$point2:#ff5252;
+$star:#ff9e06;
+$bg1:#eee;
+$bg2:#fff;
+$txt1:#aaa;
+$txt2:#222;
+$txt2:#000;
+main {
+    #visual {
+        background: url(../images/hero-bg-md-01.gif)no-repeat center; 
+        background-size: cover;
+        width:100%; margin:150px auto; height:100vh;
+        h1 {padding-top:100px; text-align: center; font-size:3.75rem; 
+            line-height: 1.3; letter-spacing: -0.07em;
+        em {font-size:3.75rem; color: $point1;}
+        }
+        .category {
+            padding:100px 0 10px;
+            display: flex;
+            justify-content: center;
+            a {
+                position:relative;
+                background: rgba(255,255,255,0.8);
+                padding:25px;
+            }
+            a::before {
+                content: ''; display: inline-block; width:1px; height:100%;
+                background: $txt1; position:absolute; left:0; top:0;
+            }
+            a:first-child::before {display: none;}
+            a:first-child {
+                background: $point2; color:$bg2;
+                border-radius: 20px 0 0 20px;
+            }
+            a:last-child {border-radius: 0 20px 20px 0;}
+        }
+        .view_box {
+            margin:20px auto;
+            text-align:center;
+            background: rgba(0,0,0,0.4); width:1000px; padding:30px;
+            #viewFrm {
+                fieldset {
+                    display: grid; grid-template-columns: 150px 1fr 150px;
+                    grid-template-rows: 50px;
+                    #number_view {
+                        option {}
+                    }
+                    input {margin:0 5px; padding:0 20px;}
+                    #view_btn {background: $point1; color:$bg2;}
+                }
+            }
+            .list {
+                padding:20px 0 50px;
+                a {
+                    i {
+                        color:$point1;
+                    }
+                    color:$bg2;
+                    margin-right:20px;
+                    float:left;
+                }
+                a::after {
+                    content: ''; display: inline-block; width:1px; height:14px; color:#189bfa;
+                    background: $txt1; right:1; bottom: 0; margin-left:15px;
+                }
+                a:first-child::before {display: none;}
+                .sample_view {float:right; border: 1px solid $bg2; padding:5px 10px; border-radius: 20px;}
+                a:last-child::before {
+                    content:'\f15c'; display:inline-block; color:#189bfa;
+                    width:20px; height:20px; background-size: 12px;
+                }
+                a:last-child::after {display: none;}
+            }
+        }
+    }
+    //공통 container 부제목~내용 영역
+    .container {
+        background: aqua; width: 1224px; margin:0 auto; padding:100px 0;
+        text-align: center; 
+        .sub_title {padding-bottom: 10px; color:$txt2;}
+        .sub_title::after {
+            margin:10px auto;
+            content: ''; display: block; width:15px; height: 2px; background: $txt1;
+        }
+        h1 {font-size:1.8rem;}
+        .contents {padding-top: 30px; color: $txt1;}
+    }
+    // video 카히스토리 영상
+    #video {
+        .tab {
+            display: flex; justify-content: center;
+            padding:40px 0;
+            a:first-child {border-bottom:5px solid $point1; }
+            a {
+                width:130px;
+                padding:25px 0;
+            }
+        }
+        .tab_contents {
+            .tab1 {position: relative;
+                video {width:80%;}
+                .img {position: absolute; bottom:-15%; right:30px; img {}}
+            }
+            .tab2 {
+                p {background: lime; padding:200px 0;}
+            }
+        }
+    }
+    // menu 자주 사용하는 메뉴
+    #menu {
+        .sub_title {}
+        h1 {}
+        .contents {} 
+        .tab {
+            border-bottom: 1px solid $txt2;
+            display: flex;
+            justify-content: center;
+            margin:70px 0;
+            a {
+                margin:0 10px; width: 150px; height:50px; 
+                border: 1px solid $txt2; 
+                background: $bg2; line-height:50px; position:relative; bottom:-1px;
+            }
+            a:first-child {
+                margin:0 10px; border-bottom:0;
+            }
+            a:first-child::before {
+                position: absolute;
+                content:''; display: block;
+                background: #189bfa; width:100%; height: 5px;
+            }
+        }
+        .tab_contents {
+            .tab1 {
+                text-align: left;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-areas:
+                't1 t2'
+                't3 t4'
+                't5 .';
+                h2 {
+                    grid: 't1';
+                    font-size: 2rem; color:$point1;
+                    padding: 20px 20px;
+                }
+                h2+h2 {
+                    grid: 't2'; 
+                    font-size: 1.3rem; color:$txt2;
+                }
+                .big {grid:'t3'; img {}}
+                ul {grid:'t4';
+                    li {
+                        margin:20px 20px;
+                        .num {}
+                        h3 {span {}}
+                    }
+                    li:nth-child(1)::before {
+                        width:70px; height:50px;
+                        content: ''; display: inline-block; background: url(../images/menu-1-1.png)no-repeat center;
+                    }
+                    li:nth-child(2)::before {}
+                    li:nth-child(3)::before {}
+                }
+                .intro {grid:'t5';
+                    p {a {}}
+                }
+            }
+            .tab2 {}
+            .tab3 {}
+            .tab4 {}
+            .tab2,.tab3,.tab4 {
+                background: pink; padding:250px 0;
+            }
+        }
+    } 
+}
