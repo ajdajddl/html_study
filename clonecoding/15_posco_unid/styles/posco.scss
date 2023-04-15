@@ -12,6 +12,7 @@ header {
     align-items: center;
     h1 {a {img {}}}
     nav {
+        position: relative;
         .gnb {
             height: 100px;
             padding:0 20px;
@@ -20,20 +21,30 @@ header {
             > li {height: 100px; display: flex; position:relative;  > a {padding:0 20px; font-size:1.1rem; width:200px; line-height:100px; background: aqua;}}
             .sub {
                 width:100%;
-                background:#ff0; height:250px; position: absolute; top:100px;
+                background:#fff; height:250px; position: absolute; top:100px;
                 z-index: 99;
                 li {
                     padding:10px 20px;
                     a {font-size: 1.1rem;}
                 }
             }
+            //서브 배경 만드는법
+            //height 애니메이션 불가능
+            // .sub::before {
+            //     content: ''; display: block;
+            //     background:#ff0; height:100%;
+            //     width:1000%;  position:absolute; left:-500%; z-index:-1;
+            //     }
+        }
+        .bg {
+            background: #f0f; width:10000%; height:250px; position:absolute; top:100px; left:-1200px; z-index: -1;
         }
     }
 }
 header::after {
     background: #fff;
     content: ''; display: block; width: 1000%; height: 100%;
-    position: absolute; left:-50%; top:0; z-index:-1;
+    position: absolute; left:-500px; top:0; z-index:-1;
 }
 main {
     background: url(../images/posco/s01_bg.jpg)no-repeat center;

@@ -17,6 +17,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header nav {
+  position: relative;
+}
 header nav .gnb {
   height: 100px;
   padding: 0 20px;
@@ -37,7 +40,7 @@ header nav .gnb > li > a {
 }
 header nav .gnb .sub {
   width: 100%;
-  background: #ff0;
+  background: #fff;
   height: 250px;
   position: absolute;
   top: 100px;
@@ -49,6 +52,15 @@ header nav .gnb .sub li {
 header nav .gnb .sub li a {
   font-size: 1.1rem;
 }
+header nav .bg {
+  background: #f0f;
+  width: 10000%;
+  height: 250px;
+  position: absolute;
+  top: 100px;
+  left: -1200px;
+  z-index: -1;
+}
 
 header::after {
   background: #fff;
@@ -57,7 +69,7 @@ header::after {
   width: 1000%;
   height: 100%;
   position: absolute;
-  left: -50%;
+  left: -500px;
   top: 0;
   z-index: -1;
 }
