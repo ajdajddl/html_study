@@ -1,0 +1,110 @@
+$color1:#222;  
+$color2:#fff;
+$color3:#003a14;
+$color4:#f1f1f1;
+$color5:#888;
+$color6:#ccc;
+//1400px
+// .sub {display: none;} //임시 초기값
+#h_bg {
+    background: rgba(255, 255, 255, 0.496); 
+    position: fixed;
+    width:100%; z-index: 900;
+    header {
+        // background: aqua;
+        margin:0 auto;
+        width:1400px; height:150px;
+        // position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {a {img {}}}
+        nav {
+            .gnb {
+                display: flex;
+                > li {
+                    position: relative; 
+                    padding-right: 80px;
+                    > a {
+                        display: block;
+                        line-height:150px;
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+                    .sub {
+                        width:100%; background: $color2;
+                    }
+                    .sub1 {
+                        background: $color2;
+                        position: absolute; 
+                        width:100%; height:70vh;
+                        > li {
+                            > a {padding-left:7px; display: block; line-height:2.5;}
+                            .sub2 {
+                                li {
+                                    border-bottom:1px dashed $color5; 
+                                    a {
+                                        display: block; line-height:2.5;
+                                        padding-left:15px; color: $color5;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                > li:last-child {margin:0;}
+            }
+            .nav_bg {
+                background: $color2; height: 70vh;
+                position: absolute; top:150px; left:0; width:1000%; z-index:-1;
+            }
+        }
+        .all_nav {
+            width:50px;
+            transform: skew(-30deg); 
+            span {}
+            span:nth-child(1) {
+                background:$color3;
+                content:''; display: block; width: 40px; height:5px;
+                position: absolute; right:0; top:-10px; z-index: 99; 
+            }
+            span:nth-child(2) {
+                background:$color3;
+                content:''; display: block; width: 40px; height:5px;
+                position: absolute; right:0; top:0; z-index: 99; 
+            }
+            span:nth-child(3) {
+                background:$color3;
+                content:''; display: block; width: 40px; height:5px;
+                position: absolute; right:0; top:10px; z-index: 99; 
+            }
+        }
+    }
+}
+main {
+    width:100%; height: 100vh;
+    background: url(../images/unid/bg.jpg)no-repeat center;
+    background-size: cover;
+    .visual {
+        position: relative; width: 1400px;
+        margin:0 auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        .text {
+            position: absolute; left:0; top:370px;
+            span {
+                line-height: 1.5;
+                font-size: 4rem;
+                color: $color2;
+                font-weight: 600;
+            }
+        }
+        .right {
+            position: absolute; right:0;
+            img {}
+            img:nth-child(1) {width:30px; position: absolute; transform: translate(-50%,630%); top:270px;}
+            img:nth-child(2) {width:220px; position: absolute; transform: translate(-50%,50%); top:270px;}
+        }
+    }
+}

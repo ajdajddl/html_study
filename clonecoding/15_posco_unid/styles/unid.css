@@ -1,0 +1,142 @@
+#h_bg {
+  background: rgba(255, 255, 255, 0.496);
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+}
+#h_bg header {
+  margin: 0 auto;
+  width: 1400px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#h_bg header nav .gnb {
+  display: flex;
+}
+#h_bg header nav .gnb > li {
+  position: relative;
+  padding-right: 80px;
+}
+#h_bg header nav .gnb > li > a {
+  display: block;
+  line-height: 150px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+#h_bg header nav .gnb > li .sub {
+  width: 100%;
+  background: #fff;
+}
+#h_bg header nav .gnb > li .sub1 {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+}
+#h_bg header nav .gnb > li .sub1 > li > a {
+  padding-left: 7px;
+  display: block;
+  line-height: 2.5;
+}
+#h_bg header nav .gnb > li .sub1 > li .sub2 li {
+  border-bottom: 1px dashed #888;
+}
+#h_bg header nav .gnb > li .sub1 > li .sub2 li a {
+  display: block;
+  line-height: 2.5;
+  padding-left: 15px;
+  color: #888;
+}
+#h_bg header nav .gnb > li:last-child {
+  margin: 0;
+}
+#h_bg header nav .nav_bg {
+  background: #fff;
+  height: 70vh;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 1000%;
+  z-index: -1;
+}
+#h_bg header .all_nav {
+  width: 50px;
+  transform: skew(-30deg);
+}
+#h_bg header .all_nav span:nth-child(1) {
+  background: #003a14;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  z-index: 99;
+}
+#h_bg header .all_nav span:nth-child(2) {
+  background: #003a14;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+#h_bg header .all_nav span:nth-child(3) {
+  background: #003a14;
+  content: "";
+  display: block;
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 99;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/unid/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+main .visual {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+main .visual .text {
+  position: absolute;
+  left: 0;
+  top: 370px;
+}
+main .visual .text span {
+  line-height: 1.5;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 600;
+}
+main .visual .right {
+  position: absolute;
+  right: 0;
+}
+main .visual .right img:nth-child(1) {
+  width: 30px;
+  position: absolute;
+  transform: translate(-50%, 630%);
+  top: 270px;
+}
+main .visual .right img:nth-child(2) {
+  width: 220px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 270px;
+}/*# sourceMappingURL=unid.css.map */
